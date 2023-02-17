@@ -1,0 +1,437 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-bg);
+    font-family: var(--primary-font);
+    color: #fff;
+}
+
+
+:root {
+    --accent-color: #E98248;
+    --primary-font:'Open Sans', sans-serif;
+    --tittle-font: 'Raleway', sans-serif;
+    --color-light: #fff;
+    --color-dark: #303030;
+    --color-text: #555555;
+    --color-carousel: #9DA4BD60;
+    --color-bg: #FFFFFF;
+    --color-bg-secondary: #F7F7F7;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: #fff;
+}
+
+
+.link:hover,
+.link:focus {
+    color: var(--accent-color);
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+
+.header {
+    background-color: #E98248;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+
+/* ==============================????============================== */
+
+.section {
+    padding-top: 130px;
+    outline: 2px solid red;
+}
+
+
+
+/* ==============================COMPONENTS============================== */
+
+.hero {
+    padding-top: 192px;
+    padding-bottom: 206px;
+}
+
+.descr {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.66;
+    letter-spacing: 0.02em;
+    color: var(--color-text);
+}
+
+.main-button {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--color-light);
+    text-align: center;
+    box-sizing: border-box; 
+    padding: 12px 33px;
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
+    background-color: transparent;
+    cursor: pointer;
+    min-width: 160px;
+}
+
+.main-button:hover,
+.main-button:focus {
+    background-color: var(--accent-color);
+    color: var(--color-light);
+}
+
+.black-btn {
+    color: var(--color-dark);
+}
+
+.tel {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.btn-send {
+    padding: 12px 62px;
+}
+
+.tel:hover,
+.tel:focus {
+    color: var(--accent-color);
+}
+
+.carousel-btn {
+    color: var(--color-light);
+    background: none;
+    border: none;
+    font-size: 12px;
+    line-height: 1.33;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.carousel-btn[disabled] {
+    color: var(--color-carousel);
+}
+
+
+.suptittle {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.363;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.suptittle-dark {
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
+.suptittle-light {
+    color: var(--color-dark)
+}
+
+.tittle-section {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+}
+
+.tittle-section-dark {
+    color: var(--color-dark);
+}
+
+.paragraph {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.85;
+    letter-spacing: 0.02em;
+    color: var(--color-text);
+}
+
+
+
+
+.color-address {
+    color: rgba(255, 255, 255, 70%);
+}
+
+  
+/* ==============================HEADER============================== */
+
+
+.contact-list {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.66;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navigation {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    gap: 72px;
+}
+
+.header-menu {
+    display: flex;
+}
+
+.header-menu .link {
+   padding: 20px;
+}
+
+
+/* ==============================MAIN============================== */
+
+
+
+.main-tittle {
+    margin-bottom: 20px;
+    font-family: var(--tittle-font);
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+}
+
+/* ==============================ABOUT US============================== */
+
+.about-container {
+    display: flex;
+    gap: 72px;
+}
+
+.about-img {
+    display: flex;
+    gap: 40px;
+}
+
+/* ==============================/ABOUT US============================== */
+/* ==============================PRICES============================== */
+
+.prices-section {
+    background-color: #E98248;
+}
+
+.pricing {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+
+.pricing > .prices {
+    flex-basis: calc(100%/2);
+    padding: 10px 40px;
+}
+
+.price-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-content > .descr {
+   color: var(--color-light);
+   margin-bottom: 0;
+
+}
+
+.btn-book-now {
+    padding: 12px 42px;
+}
+
+.btn-book-now-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* ==============================/PRICES============================== */
+/* ==============================WHY============================== */ 
+ .why-section {
+    padding-left: 100px;
+    padding-right: 75px;
+}
+.why-container {
+    display: flex;
+    gap: 130px;
+}
+
+.why-tittle {
+    max-width: 420px;
+}
+
+.why-left-side {
+    display: flex;
+    flex-wrap: wrap;
+     gap: 30px; 
+    width: 330px; 
+}
+
+.why-items {
+    flex-basis: calc((100%-30px) / 2);
+}
+
+.why-content {
+    background-color: var(--color-bg-secondary);
+    padding: 20px 24px;
+}
+
+.why-descr {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.35;
+    color: var(--color-dark);
+    text-align: center;
+    margin: 0;
+}
+
+.why-number {
+    display: block;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.35;
+    letter-spacing: 0.05em;
+    color: var(--color-dark);
+    margin-bottom: 6px;
+}
+
+
+
+
+/* ==============================/WHY============================== */
+
+/* ==============================INSPO============================== */
+
+.inspo-cards {
+    display: flex;
+    flex-wrap: wrap;
+     gap: 30px;
+}
+
+.inspo-cards > .items {
+    flex-basis: calc ((100%-60px)/3);
+}
+
+.inspo-content {
+    padding: 30px 121px 0 121px;
+}
+
+.inspo-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-align: center;
+    color: var(--accent-color);
+}
+
+.inspo-tittle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.38;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--color-dark);
+    margin-bottom: 8px;
+}
+
+.inspo-img {
+    box-shadow: (4px 4px 8px rgba(0, 0, 0, 0.45));
+}
+
+/* ==============================/INSPO============================== */
+
+/* ==============================/MAIN============================== */
+
+/* ==============================FOOTER============================== */
+
+.footer-section {
+    background: var(--color-bg-secondary);
+}
+.hours {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.363;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.container-footer {
+    display: flex;
+    align-items: center;
+    padding: 56px 0;
+
+}
+
+.sayings p {
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.363;
+    color: var(--color-dark)
+}
+
+.sayings p:hover,
+.sayings p:focus {
+    color: var(--accent-color);
+
+}
+
+.sayings {
+    display: flex;
+    gap: 36px;
+}
+
+.copyright {
+    flex-grow: 1;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: #9DA4BD;
+}
+
+/* ==============================/FOOTER============================== */
