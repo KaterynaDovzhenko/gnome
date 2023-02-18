@@ -239,6 +239,10 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* ==============================ABOUT US============================== */
 
+.about-us-section {
+    padding-bottom: 130px;
+}
+
 .about-container {
     display: flex;
     gap: 72px;
@@ -254,6 +258,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .prices-section {
     background-color: #E98248;
+    padding-bottom: 130px;
 }
 
 .pricing {
@@ -294,6 +299,7 @@ p, h1, h2, h3, h4, h5, h6 {
  .why-section {
     padding-left: 100px;
     padding-right: 75px;
+    padding-bottom: 130px;
 }
 .why-container {
     display: flex;
@@ -307,12 +313,12 @@ p, h1, h2, h3, h4, h5, h6 {
 .why-left-side {
     display: flex;
     flex-wrap: wrap;
-     gap: 30px; 
+    gap: 30px; 
     width: 330px; 
 }
 
 .why-items {
-    flex-basis: calc((100%-30px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
 }
 
 .why-content {
@@ -339,12 +345,20 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-bottom: 6px;
 }
 
+.why-right-side {
+    max-width: 500px;
+}
+
 
 
 
 /* ==============================/WHY============================== */
 
 /* ==============================INSPO============================== */
+
+.inspo-section {
+    padding-bottom: 130px;
+}
 
 .inspo-cards {
     display: flex;
@@ -353,7 +367,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .inspo-cards > .items {
-    flex-basis: calc ((100%-60px)/3);
+    flex-basis: calc ((100% - 60px)/3);
 }
 
 .inspo-content {
