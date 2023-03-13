@@ -7,66 +7,99 @@
     <title>CrStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-  />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container">
-          <div class="header-container">
-            <nav class="navigation">
+      <div class="header-container-desktop">
+        <nav class="navigation">
           <a class="logo" href="#">
             <img class="logo-img" src="./img/logo.svg" alt="CrStudio logo"
           /></a>
           <ul class="header-menu">
             <li>
-              <a class="link" href="#services">Services and prices</a>
+              <a class="link header-link" href="#services">About us</a>
             </li>
             <li>
-              <a class="link" href="#about us">About us</a>
+              <a class="link header-link" href="#about us"
+                >Services and prices</a
+              >
             </li>
             <li>
-              <a class="link" href="#inspo">Inspiration</a>
+              <a class="link header-link" href="#inspo">Inspiration</a>
             </li>
             <li>
-              <a class="link" href="#contacts">Contacts</a>
+              <a class="link header-link" href="#contacts">Contacts</a>
             </li>
           </ul>
         </nav>
-        <a class="tel link" href="tel:+11111111111">+11 111 111 11 11</a>
-        <button class="main-button " type="button">book-online</button>
-          </div>
+        <div class="header-contacts">
+          <a class="link" href="tel:+11111111111">+11 111 111 11 11</a>
+          <button class="main-button" type="button" data-modal-open>
+            book-online
+          </button>
+        </div>
       </div>
-
+      <div class="header-container-mobile">
+        <a class="logo-mobile" href="#">
+          <img class="logo-mobile-img" src="./img/logo-white.svg" alt="CrStudio logo"
+        /></a>
+        <button class="header-burger" type="button">
+          <svg width="24" height="16">
+            <use href="./img/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
+      </div>
     </header>
     <main>
-      <section class="section hero">
+      <section class="hero">
         <div class="container">
-          <ul class="sayings">
-            <li><p >We inspire</p></li>
-            <li><p >We help</p></li>
-          </ul>
-          <p class="suptittle suptittle-dark">art courses for everyone</p>
-          <h1 class="main-tittle">CrStudio</h1>
-          <p class="descr">
-            Unleash your creativity and explore your artistic potential with our
-            art courses.
-          </p>
-          <ul>
-            <li><button class="carousel-btn" type="button" disabled>next</button></li>
-            <li><button class="carousel-btn" type="button">back</button></li>
-          </ul>
+          <div class="hero-container">
+            <ul class="sayings">
+              <li><p>We inspire</p></li>
+              <li><p>We help</p></li>
+            </ul>
+            <p class="suptittle suptittle-dark">art courses for everyone</p>
+            <h1 class="main-tittle">CrStudio</h1>
+            <p class="descr header-descr">
+              Unleash your creativity and explore your artistic potential with
+              our art courses.
+            </p>
+            <ul class="carousel-control">
+              <li>
+                <button
+                  class="carousel-btn carousel-btn-prev"
+                  type="button"
+                  disabled
+                >
+                  back
+                </button>
+              </li>
+              <li>
+                <button class="carousel-btn carousel-btn-next" type="button">
+                  next
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
-      <section  class="section about-us-section"id="about us">
+      <!-- <section  class="section about-us-section"id="about us">
         <div class="container">
           <div class="about-container">
                  <div class="about-img">
@@ -97,12 +130,12 @@
           succeed. From drawing and painting to sculpture and printmaking, our
           courses cover a wide range of mediums and styles.
         </p>
-        <button class="main-button black-btn" type="button">book-online</button>
+        <a class="main-button black-btn" href="#contacts">book-online</a>
        </div>
           </div>
         </div>
-      </section>
-      <section  class="section prices-section"id="services">
+      </section> -->
+      <!-- <section  class="section prices-section"id="services">
         <div class="container">
         <p class="suptittle suptittle-dark secttion-tagline">spend your time with us</p>
         <h2 class="tittle-section">Services and prices</h2>
@@ -157,11 +190,11 @@
           </li>
         </ul>
        <div class="btn-book-now-container">
-         <button class="main-button btn-book-now" type="button">book now</button>
+         <a class="main-button btn-book-now" href="#contacts" >book now</a>
        </div>
         </div>
-      </section>
-      <section class="section why-section">
+      </section> -->
+      <!-- <section class="section why-section">
         <div class="container">
             <div class="why-container">
 
@@ -200,79 +233,207 @@
               </div>
           </div>
         </div>
-      </section>
-      <section class="section inspo-section" id="inspo">
+      </section> -->
+      <!-- <section class="section inspo-section" id="inspo">
         <div class="container">
         <p class="suptittle suptittle-light ">for true connoisseurs of the atmosphere</p>
         <h2 class="tittle-section tittle-section-dark">Our inspiration</h2>
         <ul class="inspo-cards">
+          
           <li class="items">
-            <img  class="inspo-img"
+            <div class="inspo-img">
+              <img 
               src="./img/gnome-flowers.jpg"
               width="370"
               height="346"
               alt="gnome with flowers"
             />
+            <div class="inspo-descr">
+              <p class="inspo-hover-descr">Flowers have long been a source of inspiration for artists across different mediums, and for good reason. Their vibrant colors, intricate shapes, and delicate textures make them a captivating subject for any creative mind.</p>
+            </div>
+            </div>
             <div class="inspo-content">
            <h3 class="inspo-tittle">Flowers</h3>
             <p class="inspo-text">all colors that exist</p>
             </div>
           </li>
           <li class="items">
-            <img class="inspo-img"
+             <div class="inspo-img">
+            <img
               src="./img/gnome-chemistry.jpg"
               width="370"
               height="346"
               alt="gnome who studies chemistry"
             />
+             <div class="inspo-descr">
+              <p class="inspo-hover-descr">For painters, plants can offer an opportunity to explore the play of light and shadow as they fall on different parts of a plant. The diverse shapes and forms of plants can offer endless possibilities for experimentation with color, texture, and composition.</p>
+            </div>
+             </div>
             <div class="inspo-content">
               <h3 class="inspo-tittle">Plants</h3>
             <p class="inspo-text">all kinds that exist</p>
             </div>
           </li>
           <li class="items">
-            <img class="inspo-img"
+             <div class="inspo-img">
+            <img
               src="./img/sad-gnome-painitng.jpg"
               width="370"
               height="346"
               alt="sad gnome is painting"
             />
+             <div class="inspo-descr">
+              <p class="inspo-hover-descr">For painters, looking at the work of other artists can offer a wealth of inspiration, from the vivid colors and bold brushstrokes of the Impressionists to the moody, introspective portraits of the Expressionists.</p>
+            </div>
+             </div>
             <div class="inspo-content">
               <h3 class="inspo-tittle">Paintings</h3>
             <p class="inspo-text">all that exist</p>
             </div>
+
           </li>
         </ul>
         </div>
-      </section>
-      <section class="section" id="contacts">
+      </section> -->
+      <!-- <section class="section section-contact" id="contacts">
         <div class="container">
-        <h2 class="tittle-section">Online appointment</h2>
-        <form action="">
-          <button class="main-button btn-send" type="submit">send</button>
-        </form>
-        <h2 class="tittle-section">Contacts</h2>
-        <ul class="color-address">
-          <li class="descr"><address class="contact-list">str Retedertska 18/7, </br>
-            Bielefeld, Germany</address></li>
-          <li class="descr color-address"><a class="tel link contact-list" href="tel:+11111111111">+11 111 111 11 11</a></li>
-          <li class="descr color-address"><a class="tel link descr contact-list" href="mailto:contact@crstudio.com">contact@crstudio.com</a></li>
+          <div class="contact-container">
+            <div class="contact-form">
+            <p class="tittle-section">Online appointment</p>
+            <form class="contact-form-appointment" name="contact-form">
+              <div class="form-container">
+                <div class="form-field-appointment">
+               
+                <input class="form-input-appointment" type="text" name="name" id="name" placeholder="Name" required minlength="2">
+              </div>
+              <div class="form-field-appointment">
+                
+                <input class="form-input-appointment" type="tel" name="phone" id="phone" placeholder="Phone" required pattern="^\+[0-91]{12}">
+                </div>
+              <div class="form-field-appointment-comment">
+          
+                <textarea class="form-input-appointment form-textarea-appointment" name="comment" id="comment"></textarea>
+                <label class="form-label-appointment" for="comment">Comment</label>
+              </div>
+              </div>
+            <button class="main-button btn-send" type="submit">send</button>
+          </form>
+          </div>
+       <div class="contact-info">
+         <h2 class="tittle-section">Contacts</h2>
+         <div class="address-container">
+        <address>
+          <ul class="contact-info-list">
+          <li class="descr color-address">
+                  <a class="contact-link link" href="">
+              <svg class="contact-icon">
+                <use href="./img/icons.svg#icon-map"></use>
+              </svg>
+            str Retedertska 18/7, </br>
+            Bielefeld, Germany
+            </a>
+            </li>
+          <li class="descr"><a class="link contact-link" href="tel:+11111111111">                 
+              <svg class="contact-icon">
+                <use href="./img/icons.svg#icon-phone"></use>
+              </svg> +11 111 111 11 11</a></li>
+          <li class="descr mail-item"><a class="link contact-link" href="mailto:contact@crstudio.com"> 
+            <svg class="contact-icon">
+                <use href="./img/icons.svg#icon-mail"></use>
+              </svg>contact@crstudio.com</a></li>
         </ul>
-        <p class="hours">working hours</p>
-        <span class="descr contact-list">Daily from 9 am till 9 pm</span>
+        </address>
+         </div>
+        <p class="suptittle hours">working hours</p>
+        <span class="descr hours-descr">Daily from 9 am till 9 pm</span>
+       </div>
         </div>
-      </section>
-      <footer class="footer-section">
+          </div>
+      </section> -->
+    </main>
+    <!-- <footer class="footer-section">
         <div class="container">
         <div class="container-footer">
            <p class="copyright">&copy; Copyright 2023</p>
-        <ul class="sayings">
+        <ul class="sayings-footer">
           <li><p>We inspire</p></li>
           <li><p>We help</p></li>
         </ul>
         </div>
         </div>
-      </footer>
-    </main>
+      </footer> -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" data-modal-close>X</button>
+        <form name="contact-from" autocomplete="on" class="form">
+          <legend class="legend">
+            Leave your contacts and we will call you back
+          </legend>
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              class="form-input icon-size"
+              name="name"
+              id="name"
+              required
+              minlength="2"
+            />
+            <svg class="icon-form">
+              <use href="./img/icons.svg#profile"></use>
+            </svg>
+          </div>
+          <div class="form-field">
+            <label for="phone">Phone</label>
+            <input
+              type="text"
+              class="form-input"
+              name="phone"
+              id="phone"
+              required
+            />
+            <svg class="icon-form">
+              <use href="./img/icons.svg#phone"></use>
+            </svg>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="text" class="form-input" name="email" id="email" />
+            <svg class="icon-form">
+              <use href="./img/icons.svg#email"></use>
+            </svg>
+          </div>
+          <div class="form-field form-comment">
+            <label for="comment">Comment</label>
+            <textarea
+              class="textarea"
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="8"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <label class="form-field form-checkbox">
+            <input
+              class="checkbox-input"
+              type="checkbox"
+              name="checkbox"
+              id="checkbox"
+            />
+            <svg class="checkbox-icon">
+              <use href="./img/icons.svg#checkbox"></use>
+            </svg>
+            I accept the terms and conditions of the
+            <a class="link-privacy" href="">Privacy Policy</a>
+          </label>
+
+          <button type="submit" class="main-button button-form">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
