@@ -103,18 +103,26 @@
         <div class="container">
           <div class="about-container">
           <div class="about-img">
-         <img
-          src="./img/gnome-pencil-short.jpg"
-          width="270"
-          height="445"
-          alt="The painted gnome"
-        />
-        <img
-          src="./img/gnome-in-car-short.jpg"
-          width="270"
-          height="445"
-          alt="Gnome in the car"
-        />
+          <img class="about-img-item"
+            srcset="
+            ./img/gnome-pencil-330.jpg 330w, 
+            ./img/gnome-pencil-270.jpg 270w
+            "
+            sizes="(min-width: 768px) 330px, (min-width: 1200px) 270px"
+            src="./img/gnome-pencil.jpg"
+            alt="Gnome in the car"
+          />
+        <img class="about-img-item"
+            srcset="
+            ./img/gnome-in-car-330.jpg 330w, 
+            ./img/gnome-in-car-270.jpg 270w
+            "
+            sizes="(min-width: 768px) 330px, (min-width: 1200px) 270px"
+            src="./img/gnome-in-car.jpg"
+           
+            alt="Gnome in the car"
+          />
+
       </div>
        <div class="about-content">
          <h2 class="suptittle suptittle-light">about us</h2>
@@ -244,12 +252,12 @@
           
           <li class="items">
             <div class="inspo-img">
-              <img  class="img-inspo-cards"
-              src="./img/gnome-flowers.jpg"
-              width="370"
-              height="346"
-              alt="gnome with flowers"
-            />
+              <picture class="picture">
+                <source srcset="./img/gnome-flowers.webp 1x, ./img/gnome-flowers@2x.webp 2x" type="image/webp"/>
+                <source srcset="./img/gnome-flowers.jpg 1x, ./img/gnome-flowers@2x.jpg 2x" type="image/jpeg"/>
+                <img class="img-inspo-cards"
+                src="./img/gnome-flowers.jpg" alt="Gnome with flowers">
+              </picture>
             <div class="inspo-descr">
               <p class="inspo-hover-descr">Flowers have long been a source of inspiration for artists across different mediums, and for good reason. Their vibrant colors, intricate shapes, and delicate textures make them a captivating subject for any creative mind.</p>
             </div>
@@ -261,12 +269,12 @@
           </li>
           <li class="items">
              <div class="inspo-img">
-            <img class="img-inspo-cards"
-              src="./img/gnome-chemistry.jpg"
-              width="370"
-              height="346"
-              alt="gnome who studies chemistry"
-            />
+              <picture class="picture">
+                <source srcset="./img/gnome-chemistry.webp 1x, ./img/gnome-chemistry@2x.webp 2x" type="image/webp"/>
+                <source srcset="./img/gnome-chemistry.jpg 1x, ./img/gnome-chemistry@2x.jpg 2x" type="image/jpeg"/>
+                <img class="img-inspo-cards"
+                src="./img/gnome-chemistry.jpg" alt="Gnome who studies chemistry">
+              </picture>
              <div class="inspo-descr">
               <p class="inspo-hover-descr">For painters, plants can offer an opportunity to explore the play of light and shadow as they fall on different parts of a plant. The diverse shapes and forms of plants can offer endless possibilities for experimentation with color, texture, and composition.</p>
             </div>
@@ -278,12 +286,12 @@
           </li>
           <li class="items">
              <div class="inspo-img">
-            <img class="img-inspo-cards"
-              src="./img/sad-gnome-painitng.jpg"
-              width="370"
-              height="346"
-              alt="sad gnome is painting"
-            />
+              <picture class="picture">
+                <source srcset="./img/sad-gnome-painting.webp 1x, ./img/sad-gnome-painting@2x.webp 2x" type="image/webp"/>
+                <source srcset="./img/sad-gnome-painting.jpg 1x, ./img/sad-gnome-painting@2x.jpg 2x" type="image/jpeg"/>
+                <img class="img-inspo-cards"
+                src="./img/sad-gnome-painting.jpg" alt="Sad gnome is painting">
+              </picture>
              <div class="inspo-descr">
               <p class="inspo-hover-descr">For painters, looking at the work of other artists can offer a wealth of inspiration, from the vivid colors and bold brushstrokes of the Impressionists to the moody, introspective portraits of the Expressionists.</p>
             </div>
@@ -301,10 +309,34 @@
         <div class="container">
           <p class="suptittle suptittle-light suptittle-ex">"artem" in latin means art</p>
           <ul class="ex-list">
-            <li><img src="./img/newslatter.jpg" alt=""></li>
-            <li><img src="./img/doors.jpg" alt=""></li>
-            <li><img src="./img/wall.jpg" alt=""></li>
-            <li><img src="./img/painters.jpg" alt=""></li>
+            <li>
+              <picture>
+                <source srcset="./img/newslatter.webp 1x, ./img/newslatter@2x.webp 2x" type="image/webp"/>
+                <source srcset="./img/newslatter.jpg 1x, ./img/newslatter@2x.jpg 2x" type="image/jpeg"/>
+                <img src="./img/newslatter.jpg" alt="Newslatter">
+              </picture>
+            </li>
+            <li>
+              <picture>
+                <source srcset="./img/doors.webp 1x, ./img/doors@2x.webp 2x" type="image/webp"/>
+                <source srcset="./img/doors.jpg 1x, ./img/doors@2x.jpg 2x" type="image/jpeg"/>
+                <img src="./img/doors.jpg" alt="Painted doors">
+              </picture>
+            </li>
+            <li>
+              <picture>
+                <source srcset="./img/wall.webp 1x, ./img/wall@2x.webp 2x" type="image/webp"/>
+                <source srcset="./img/wall.jpg 1x, ./img/wall@2x.jpg 2x" type="image/jpeg"/>
+                <img src="./img/wall.jpg" alt="Painted wall">
+              </picture>
+            </li>
+            <li>
+              <picture>
+                <source srcset="./img/painters.webp 1x, ./img/painters@2x.webp 2x" type="image/webp"/>
+                <source srcset="./img/painters.jpg 1x, ./img/painters@2x.jpg 2x" type="image/jpeg"/>
+                <img src="./img/painters.jpg" alt="Brushes for painting">
+              </picture>
+              </li>
           </ul>
         </div>
       </section>

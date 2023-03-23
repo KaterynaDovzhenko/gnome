@@ -351,7 +351,14 @@ p, h1, h2, h3, h4, h5, h6 {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
 
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: url('../img/gnome-painting-header@2x.jpg');
+    }
 }
 
 .hero-container {
@@ -532,15 +539,32 @@ p, h1, h2, h3, h4, h5, h6 {
     }
 }
 
-.about-img {
-    display: flex;
-    gap: 40px;
-    flex-shrink: 0;
-}
-
 @media (min-width: 320px) and (max-width: 767px) {
     .about-img {
         display: none;
+    }
+}
+
+@media (min-width: 768px){
+    .about-img {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        flex-shrink: 0;
+    }
+}
+
+@media (min-width: 1280px){
+    .about-img {
+        gap: 40px;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 1279px) {
+    .about-img-item {
+        width: 330px;
+        height: 230px;
     }
 }
 
@@ -555,6 +579,14 @@ p, h1, h2, h3, h4, h5, h6 {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .prices-section {
+        background-image: url('../img/gnome-with-bottles@2x.jpg');
+    }
 }
 
 .pricing {
@@ -617,6 +649,11 @@ p, h1, h2, h3, h4, h5, h6 {
     justify-content: center;
 }
 
+.picture {
+    width:370px;
+    height:346px;
+}
+
 /* ==============================/PRICES============================== */
 /* ==============================WHY============================== */ 
  .why-section {
@@ -627,6 +664,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .why-container {
     display: flex;
     gap: 44px;
+    align-items: center;
 }
 
 @media (max-width: 1279px) {
@@ -915,7 +953,14 @@ p, h1, h2, h3, h4, h5, h6 {
     background-repeat: no-repeat;
     background-position: right;
     background-size: 50.2%;
-    
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .section-contact {
+        background-image: url('../img/gnome-painting-transparent@2x.png');
+    }
 }
 
 @media (min-width:1280px) {
